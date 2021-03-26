@@ -55,6 +55,21 @@ It will have valid JSON array, with each element being a string of the verse's t
 
 Verses are 0-indexed. `verses[0]` gets verse 1. Watch out for off-by-one errors in the verses!
 
+
+## Client
+
+There is a browser-ready client:
+```html
+<script src="https://www.canonapi.com/v1client.js"></script>
+<script>
+	window.canonapiv1client('genesis', 1).then(({ verses, bookName }) => {
+		console.log(verses[0]) // 'In the beginning...'
+		console.log(verses) // [ 'In the beginning...', ... ]
+		console.log(bookName) // 'Genesis'
+	})
+</script>
+```
+
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit)
