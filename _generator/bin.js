@@ -35,16 +35,16 @@ books.forEach(({ name }) => {
 		.reduce((chapters, chunk) => {
 			let chapter = chapters[chunk.chapterNumber - 1]
 			if (!chapter) {
-				chapter = [ null ] // 1-index the verses
+				chapter = [] // 1-index the verses
 				chapters.push(chapter)
 			}
 
-			if (!chapter[chunk.verseNumber]) {
+			if (!chapter[chunk.verseNumber - 1]) {
 				chapter.push(chunk.value)
 			} else if (chunk.type === 'paragraph text') {
-				chapter[chunk.verseNumber] += chunk.value
+				chapter[chunk.verseNumber - 1] += chunk.value
 			} else { // line text
-				chapter[chunk.verseNumber] += '\n' + chunk.value
+				chapter[chunk.verseNumber - 1] += '\n' + chunk.value
 			}
 
 			return chapters
