@@ -1,7 +1,7 @@
 {
-  "name": "lookup-multiple-bible-verses",
+  "name": "canonapi.com",
   "version": "1.0.0",
-  "description": "A simple app to look up multiple bible verses at once",
+  "description": "An API for the Bible",
   "main": "bin.js",
   "private": true,
   "dependencies": {
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ArtskydJ/lookup-multiple-bible-verses.git"
+    "url": "git+https://github.com/ArtskydJ/canonapi.com.git"
   },
   "author": "ArtskydJ",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ArtskydJ/lookup-multiple-bible-verses/issues"
+    "url": "https://github.com/ArtskydJ/canonapi.com/issues"
   },
-  "homepage": "https://github.com/ArtskydJ/lookup-multiple-bible-verses#readme"
+  "homepage": "https://github.com/ArtskydJ/canonapi.com#readme"
 }
