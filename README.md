@@ -1,6 +1,4 @@
-# [CanonAPI.com](https://www.canonapi.com/)
-
-A simple public API to get passages of scripture.
+A simple public API to get passages of scripture.  Uses the World English Bible (WEB).
 
 ## Usage
 
@@ -73,3 +71,4 @@ There is a browser-ready client:
 ## License
 
 [MIT](https://choosealicense.com/licenses/mit)
+
